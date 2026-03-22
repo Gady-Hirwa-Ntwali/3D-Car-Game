@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://bxg3vjaykjay7"]
+
+[ext_resource type="Script" uid="uid://dk5qtuvpteplx" path="res://Scenes/player.gd" id="1_v0iea"]
+[ext_resource type="PackedScene" uid="uid://bf0oxl5mnvw8o" path="res://assets/meshes/car/low_poly_f1_car.glb" id="2_cvnsp"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_cvnsp"]
+size = Vector3(0.23659515, 0.13508987, 0.42821503)
+
+[node name="Player" type="RigidBody3D" unique_id=596662594]
+lock_rotation = true
+script = ExtResource("1_v0iea")
+
+[node name="Sketchfab_Scene" parent="." unique_id=690928102 instance=ExtResource("2_cvnsp")]
+transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 0, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1015714982]
+transform = Transform3D(100, 0, 0, 0, 100, 0, 0, 0, 100, -2.1755219, 6.106758, -1.8451691)
+shape = SubResource("BoxShape3D_cvnsp")
+
+[node name="Camera3D" type="Camera3D" parent="." unique_id=1660720986]
+transform = Transform3D(1, 0, 0, 0, 0.85178185, 0.5238968, 0, -0.5238968, 0.8517818, 0, 41.176186, 55.35489)
+current = true
+fov = 95.62499
