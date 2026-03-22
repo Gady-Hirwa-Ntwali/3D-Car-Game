@@ -21,3 +21,6 @@ shape = SubResource("BoxShape3D_cvnsp")
 transform = Transform3D(1, 0, 0, 0, 0.85178185, 0.5238968, 0, -0.5238968, 0.8517818, 0, 41.176186, 55.35489)
 current = true
 fov = 95.62499
+
+[node name="InternalCamera" type="Camera3D" parent="." unique_id=2111085491]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5631585, 7.608386, -4.4270997)
