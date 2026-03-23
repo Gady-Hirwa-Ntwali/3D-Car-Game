@@ -1,3 +1,5 @@
 res://Scenes/player.gd
-res://Scenes/car.tscn
-res://Scenes/player.tscn
+res://canvas_layer.tscn
+res://canvas_layer.gd
+res://Global/GameEvents.gd
+res://Scenes/Level.tscn
