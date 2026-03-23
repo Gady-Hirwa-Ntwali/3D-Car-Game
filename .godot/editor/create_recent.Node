@@ -1,3 +1,9 @@
+MarginContainer
+Sprite2D
+Label
+HBoxContainer
+VBoxContainer
+ColorRect
 Camera3D
 RigidBody3D
 VehicleWheel3D
