@@ -1,3 +1,6 @@
+CanvasLayer
+Label
+AudioStreamPlayer3D
 Camera3D
 RigidBody3D
 VehicleWheel3D
