@@ -62,9 +62,11 @@ handbrake={
 
 [layer_names]
 
-3d_physics/layer_1="car"
+3d_render/layer_1="Player"
+3d_render/layer_2="finish line"
+3d_physics/layer_1="Player"
 3d_physics/layer_2="track"
-3d_physics/layer_3="plane"
+3d_physics/layer_3="finish line"
 
 [rendering]
 

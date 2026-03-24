@@ -21,6 +21,8 @@ var is_interior_view  = false
 @onready var speed_label = $"../CanvasLayer/Label"
 
 func _ready() -> void:
+	freeze = true
+	global_transform.origin.y += 0.5 
 	# Physics damping — handled manually for better feel
 	linear_damp  = 0.5
 	angular_damp = 5.0

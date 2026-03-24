@@ -3,3 +3,5 @@ res://Scenes/GameEvents.gd
 res://Scenes/Level.tscn
 res://Scenes/uiN.tscn
 res://Scenes/level.gd
+res://Scenes/player.gd
+res://Scenes/player.tscn

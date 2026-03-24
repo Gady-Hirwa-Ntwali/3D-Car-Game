@@ -12,4 +12,3 @@ CanvasLayer
 Camera3D
 RigidBody3D
 VehicleWheel3D
-VehicleBody3D
