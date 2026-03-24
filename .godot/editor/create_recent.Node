@@ -1,12 +1,11 @@
+Label
+HBoxContainer
 CollisionShape3D
 Area3D
 CanvasLayer
-Label
 AudioStreamPlayer3D
-Label
 Timer
 TextureRect
-HBoxContainer
 MarginContainer
 CanvasLayer
 Camera3D
