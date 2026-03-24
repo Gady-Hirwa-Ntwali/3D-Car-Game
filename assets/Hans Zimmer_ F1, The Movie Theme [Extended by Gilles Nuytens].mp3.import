@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://nuusomh6d0d6"
+path="res://.godot/imported/Hans Zimmer_ F1, The Movie Theme [Extended by Gilles Nuytens].mp3-9b1777d3e48b9afe878811ff5e1a02a0.mp3str"
+
+[deps]
+
+source_file="res://assets/Hans Zimmer_ F1, The Movie Theme [Extended by Gilles Nuytens].mp3"
+dest_files=["res://.godot/imported/Hans Zimmer_ F1, The Movie Theme [Extended by Gilles Nuytens].mp3-9b1777d3e48b9afe878811ff5e1a02a0.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
