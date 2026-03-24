@@ -1,13 +1,14 @@
+CollisionShape3D
+Area3D
+TextureRect
 MarginContainer
-Sprite2D
 Label
 HBoxContainer
 VBoxContainer
+Sprite2D
 ColorRect
 Camera3D
 RigidBody3D
 VehicleWheel3D
 VehicleBody3D
-CollisionShape3D
 Node3D
-MeshInstance3D

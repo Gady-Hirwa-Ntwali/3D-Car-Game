@@ -1,0 +1,79 @@
+[gd_scene format=3 uid="uid://1wohuusncabw"]
+
+[ext_resource type="Texture2D" uid="uid://c2fb6dm6sgngx" path="res://assets/GettyImages-2103192832.jpg.webp" id="1_27ltx"]
+[ext_resource type="FontFile" uid="uid://br3vnrm4cqyno" path="res://assets/fonts/subatomic.tsoonami.ttf" id="2_k7nsv"]
+
+[node name="Dnf" type="Control" unique_id=1796829557]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=707559085]
+position = Vector2(970.49994, 517.5)
+scale = Vector2(2.5328948, 2.4369159)
+texture = ExtResource("1_27ltx")
+
+[node name="MarginContainer2" type="MarginContainer" parent="." unique_id=711192299]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -193.5
+offset_right = 193.5
+offset_bottom = 219.0
+grow_horizontal = 2
+theme_override_constants/margin_top = 55
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer2" unique_id=133399707]
+layout_mode = 2
+size_flags_horizontal = 4
+
+[node name="Label" type="Label" parent="MarginContainer2/VBoxContainer" unique_id=928013728]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_colors/font_color = Color(0.8984785, 0.9378469, 0.99075013, 1)
+theme_override_fonts/font = ExtResource("2_k7nsv")
+theme_override_font_sizes/font_size = 170
+text = "DNF"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer2/VBoxContainer" unique_id=328636939]
+layout_mode = 2
+size_flags_horizontal = 4
+
+[node name="ScoreLabel" type="Label" parent="MarginContainer2/VBoxContainer/HBoxContainer" unique_id=1496018431]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.41960785, 1, 1, 1)
+theme_override_fonts/font = ExtResource("2_k7nsv")
+theme_override_font_sizes/font_size = 80
+text = "Score:"
+
+[node name="ScoreUpdater" type="Label" parent="MarginContainer2/VBoxContainer/HBoxContainer" unique_id=989291306]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.41960785, 1, 1, 1)
+theme_override_fonts/font = ExtResource("2_k7nsv")
+theme_override_font_sizes/font_size = 80
+text = "0"
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=1723723097]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -676.5
+offset_top = -361.0
+offset_right = 676.5
+offset_bottom = -309.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="restart" type="Label" parent="MarginContainer" unique_id=778030968]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 0.8874712, 0.86461705, 1)
+theme_override_fonts/font = ExtResource("2_k7nsv")
+theme_override_font_sizes/font_size = 80
+text = "Click  Enter To restart"
