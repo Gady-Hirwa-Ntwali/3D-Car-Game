@@ -6,6 +6,7 @@ var current_steering = 0.0
 var wheel_spin = 0.0
 var is_interior_view = false
 
+
 @onready var wheel_fl = $Sketchfab_Scene/Sketchfab_model/"176a2ec9ad5b42f386cc8a095b1e1f70_fbx"/RootNode/WheelFront_000
 @onready var wheel_fr = $Sketchfab_Scene/Sketchfab_model/"176a2ec9ad5b42f386cc8a095b1e1f70_fbx"/RootNode/WheelFront_001
 @onready var wheel_rl = $Sketchfab_Scene/Sketchfab_model/"176a2ec9ad5b42f386cc8a095b1e1f70_fbx"/RootNode/WheelFront_002
