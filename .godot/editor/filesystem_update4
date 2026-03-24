@@ -1,4 +1,5 @@
-res://Scenes/player.tscn
+res://canvas_layer.gd
+res://Global/GameEvents.gd
+res://Scenes/game_over.gd
 res://Scenes/player.gd
-res://Scenes/Level.tscn
-res://Scenes/camera_3d.gd
+res://Scenes/uiN.gd

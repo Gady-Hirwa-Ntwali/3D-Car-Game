@@ -1,6 +1,15 @@
+<<<<<<< HEAD
 CanvasLayer
 Label
 AudioStreamPlayer3D
+=======
+Label
+Timer
+TextureRect
+HBoxContainer
+MarginContainer
+CanvasLayer
+>>>>>>> ft/ui
 Camera3D
 RigidBody3D
 VehicleWheel3D
