@@ -1,5 +1,5 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1774162547
+::res://::1774335060
 icon.svg::CompressedTexture2D::954520891496342175::1773857441::1773857524::1::::<><><>0<>0<>a5b83ed145154c62d882049514710a61<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
 README.md::TextFile::-1::1773857441::0::1::::<><><>0<>0<><>::
 ::res://assets/::1773857441
@@ -14,8 +14,8 @@ low_poly_f1_car.glb::PackedScene::2789866081557733952::1773857441::1774073513::1
 ::res://assets/meshes/race_track/::1773987649
 race_track_mesh.obj::Mesh::100635921383050560::1773857441::1773857525::1::::<><><>0<>0<>3463ba7eb3a5adbc26c4b795484344b3<>res://.godot/imported/race_track_mesh.obj-42cbb2494018a4fe425872370fc766be.mesh<*>res://.godot/imported/race_track_mesh.obj-42cbb2494018a4fe425872370fc766be.mesh::
 race_track_texture.png::CompressedTexture2D::3252926722043233254::1773857441::1773987649::1::::<><><>0<>0<>81b1b545c2a050fd1264e7d9c429f6fd<>res://.godot/imported/race_track_texture.png-a8f3aea22d4f93b49a5e59ec0ce8dc18.s3tc.ctex::
-::res://Scenes/::1774161823
-car.tscn::PackedScene::6000996192371162862::1774083540::0::1::::<><><>0<>0<><>::uid://bf0oxl5mnvw8o::::res://assets/meshes/car/low_poly_f1_car.glb
-Level.tscn::PackedScene::8722808051538776000::1774083538::0::1::::<><><>0<>0<><>::uid://bxg3vjaykjay7::::res://Scenes/player.tscn<>uid://bml0h0ns33uo1::::res://assets/meshes/race_track/race_track_texture.png<>uid://bo0purqduftw::::res://assets/meshes/race_track/race_track_mesh.obj
-player.gd::GDScript::7924088305664869049::1774161823::0::1::::<>RigidBody3D<><>0<>0<><>::
-player.tscn::PackedScene::4014888405175987768::1774161823::0::1::::<><><>0<>0<><>::uid://dk5qtuvpteplx::::res://Scenes/player.gd<>uid://bf0oxl5mnvw8o::::res://assets/meshes/car/low_poly_f1_car.glb
+::res://Scenes/::1774292132
+car.tscn::PackedScene::6000996192371162862::1774168661::0::1::::<><><>0<>0<><>::uid://bf0oxl5mnvw8o::::res://assets/meshes/car/low_poly_f1_car.glb
+Level.tscn::PackedScene::8722808051538776000::1774287476::0::1::::<><><>0<>0<><>::uid://bxg3vjaykjay7::::res://Scenes/player.tscn<>uid://bml0h0ns33uo1::::res://assets/meshes/race_track/race_track_texture.png<>uid://bo0purqduftw::::res://assets/meshes/race_track/race_track_mesh.obj
+player.gd::GDScript::7924088305664869049::1774290892::0::1::::<>VehicleBody3D<><>0<>0<><>::
+player.tscn::PackedScene::4014888405175987768::1774292132::0::1::::<><><>0<>0<><>::uid://dk5qtuvpteplx::::res://Scenes/player.gd<>uid://bf0oxl5mnvw8o::::res://assets/meshes/car/low_poly_f1_car.glb
