@@ -1,9 +1,9 @@
 [gd_scene format=3 uid="uid://w08j3j2fs07c"]
 
-[ext_resource type="Script" uid="uid://cajol08qjjv8w" path="res://Scenes/uiN.gd" id="1_uy1xk"]
+[ext_resource type="Script" uid="uid://cajol08qjjv8w" path="res://canvas_layer.gd" id="1_uy1xk"]
 [ext_resource type="FontFile" uid="uid://br3vnrm4cqyno" path="res://assets/fonts/subatomic.tsoonami.ttf" id="2_8373j"]
 
-[node name="CanvasLayer" type="CanvasLayer" unique_id=740029953]
+[node name="ui" type="CanvasLayer" unique_id=740029953]
 script = ExtResource("1_uy1xk")
 
 [node name="MarginContainer" type="MarginContainer" parent="." unique_id=759910505]

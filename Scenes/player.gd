@@ -53,7 +53,7 @@ func _physics_process(delta: float) -> void:
 	var speed    = linear_velocity.length()
 	# 📊 SPEEDOMETER
 	var speed_kmh = speed * 3.6
-	speed_label.text = "Speed: " + str(int(speed_kmh)) + " m/s"
+	#speed_label.text = "Speed: " + str(int(speed_kmh)) + " m/s"
 
 	# ── Steering ────────────────────────────────────────────────────
 	var speed_ratio    = clamp(speed / top_speed, 0.0, 1.0)

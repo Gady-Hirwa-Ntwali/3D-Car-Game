@@ -21,7 +21,7 @@ config/icon="res://icon.svg"
 
 [autoload]
 
-Global="*uid://dutrr0bhdepys"
+GameEvents="*uid://dutrr0bhdepys"
 
 [input]
 

@@ -1,5 +1,5 @@
 res://canvas_layer.gd
-res://Global/GameEvents.gd
-res://Scenes/game_over.gd
-res://Scenes/player.gd
-res://Scenes/uiN.gd
+res://Scenes/GameEvents.gd
+res://Scenes/Level.tscn
+res://Scenes/uiN.tscn
+res://Scenes/level.gd

@@ -1,19 +1,15 @@
-<<<<<<< HEAD
+CollisionShape3D
+Area3D
 CanvasLayer
 Label
 AudioStreamPlayer3D
-=======
 Label
 Timer
 TextureRect
 HBoxContainer
 MarginContainer
 CanvasLayer
->>>>>>> ft/ui
 Camera3D
 RigidBody3D
 VehicleWheel3D
 VehicleBody3D
-CollisionShape3D
-Node3D
-MeshInstance3D

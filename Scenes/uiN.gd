@@ -12,8 +12,8 @@ static var img = preload("res://assets/icons/lighting.png")
 func _ready():
 	countdown_label.text = str(count)
 	time_label.text = "00:00:00" 
-	set_health(Global.total_lives)
-	Global.life_lost.connect(_on_life_lost)
+	set_health(GameEvents.total_lives)
+	GameEvents.life_lost.connect(_on_life_lost)
 	start_timer.start()
 
 func _on_life_lost(remaining_lives):
@@ -38,7 +38,7 @@ func _on_start_timer_timeout():
 		start_timer.start()
 	elif count == 0:
 		countdown_label.text = "GO!"
-		Global.race_started.emit()
+		GameEvents.race_started.emit()
 		clock_timer.start()  
 		await get_tree().create_timer(1.0).timeout
 		countdown_label.hide()
