@@ -1,0 +1,4 @@
+res://Scenes/player.gd
+res://Scenes/car.tscn
+res://Scenes/game_over.gd
+res://canvas_layer.gd
