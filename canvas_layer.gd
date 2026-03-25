@@ -8,7 +8,7 @@ extends CanvasLayer
 
 var count = 3
 var total_msecs = 0
-var current_lap = 1
+var current_lap = 0
 var max_laps = 2
 static var img = preload("res://assets/icons/lighting.png")
 
