@@ -1,11 +1,10 @@
 extends RigidBody3D
 
-# ── Tunable parameters ──────────────────────────────────────────
-@export var max_engine_force  = 280.0    # multiplied by mass, feels more grounded
+@export var max_engine_force  = 280.0
 @export var max_steering      = 0.8
-@export var traction_factor   = 4.0     # higher = less sliding
-@export var brake_force       = 8.0    # natural deceleration
-@export var top_speed         = 120.0    # m/s  (~108 km/h)
+@export var traction_factor   = 4.0
+@export var brake_force       = 8.0
+@export var top_speed         = 120.0
 @export var track_group_name: String = "track"
 
 var current_steering = 0.0
@@ -18,26 +17,12 @@ var is_interior_view  = false
 @onready var wheel_rr     = $Sketchfab_Scene/Sketchfab_model/"176a2ec9ad5b42f386cc8a095b1e1f70_fbx"/RootNode/WheelFront_003
 @onready var exterior_cam = $Camera3D
 @onready var interior_cam = $InternalCamera
-@onready var speed_label = $"../CanvasLayer/Label"
+@onready var speed_label  = $"../CanvasLayer/Label"
 
 func _ready() -> void:
-	freeze = true
-	global_transform.origin.y += 0.5 
-	# Physics damping — handled manually for better feel
+	global_transform.origin.y += 0.5
 	linear_damp  = 0.5
 	angular_damp = 5.0
-
-	# Fix slow drop at game start
-	gravity_scale = 4.0
-
-	# Snap to ground: freeze for 1 frame then release
-	freeze = true
-	await get_tree().process_frame
-	freeze = false
-	contact_monitor = true
-	
-	
-
 	exterior_cam.current = true
 	interior_cam.current = false
 
@@ -47,17 +32,40 @@ func _input(event):
 		exterior_cam.current = !is_interior_view
 		interior_cam.current = is_interior_view
 
+func _check_wall_collisions():
+	var space_state = get_world_3d().direct_space_state
 
+	var directions = [
+		Vector3(0, 0, -1),  # front
+		Vector3(0, 0, 1),   # back
+		Vector3(-1, 0, 0),  # left
+		Vector3(1, 0, 0),   # right
+	]
+
+	for dir in directions:
+		var from = global_position
+		var to   = global_position + dir * 2.0
+
+		var query = PhysicsRayQueryParameters3D.create(from, to)
+		query.exclude = [self]
+
+		var result = space_state.intersect_ray(query)
+		if result:
+			print("Hit wall: ", result.collider.name)
 
 func _physics_process(delta: float) -> void:
 	var throttle = Input.get_axis("move_backward", "move_forward")
 	var steer    = Input.get_axis("steer_right", "steer_left")
 	var speed    = linear_velocity.length()
+
+	# Check wall collisions
+	_check_wall_collisions()
+
 	# 📊 SPEEDOMETER
 	var speed_kmh = speed * 3.6
-	#speed_label.text = "Speed: " + str(int(speed_kmh)) + " m/s"
+	#speed_label.text = "Speed: " + str(int(speed_kmh)) + " km/h"
 
-	# ── Steering ────────────────────────────────────────────────────
+	# ── Steering ─────────────────────────────────────────────────
 	var speed_ratio    = clamp(speed / top_speed, 0.0, 1.0)
 	var steering_limit = lerp(max_steering, max_steering * 0.8, speed_ratio)
 	current_steering   = lerp(current_steering, steer * steering_limit, delta * 7.0)
@@ -66,22 +74,22 @@ func _physics_process(delta: float) -> void:
 		var steer_speed = lerp(3.0, 1.5, speed_ratio)
 		rotate_y(current_steering * steer_speed * delta)
 
-	# ── Engine force (capped at top_speed) ──────────────────────────
+	# ── Engine force ──────────────────────────────────────────────
 	if speed < top_speed or throttle < 0:
 		var forward = -global_transform.basis.z * throttle
 		apply_central_force(forward * max_engine_force * mass)
 
-	# ── Traction: kill lateral (sideways) velocity every frame ───────
+	# ── Traction ──────────────────────────────────────────────────
 	var local_vel   = global_transform.basis.inverse() * linear_velocity
 	local_vel.x    *= pow(1.0 - clamp(traction_factor * delta, 0.0, 1.0), 1.0)
 	linear_velocity = global_transform.basis * local_vel
 
-	# ── Braking / natural drag when no throttle ──────────────────────
+	# ── Braking ───────────────────────────────────────────────────
 	if throttle == 0.0 and speed > 0.1:
 		var drag = -linear_velocity.normalized() * min(brake_force, speed) * mass
 		apply_central_force(drag)
 
-	# ── Wheel visuals ────────────────────────────────────────────────
+	# ── Wheel visuals ─────────────────────────────────────────────
 	if throttle != 0 and speed > 0.5:
 		wheel_spin += -sign(throttle) * speed * delta * 180.0
 

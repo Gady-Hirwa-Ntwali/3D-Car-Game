@@ -67,6 +67,7 @@ handbrake={
 3d_physics/layer_1="Player"
 3d_physics/layer_2="track"
 3d_physics/layer_3="finish line"
+3d_physics/layer_4="void"
 
 [rendering]
 
