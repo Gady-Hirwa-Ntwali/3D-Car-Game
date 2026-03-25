@@ -7,8 +7,6 @@ func _ready() -> void:
 
 
 
-
-
 func _on_finish_line_body_entered(body: Node3D) -> void:
     if body.is_in_group("player") :
         var ui = get_tree().get_first_node_in_group("ui")

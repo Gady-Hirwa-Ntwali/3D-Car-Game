@@ -1,5 +1,5 @@
 extends Control
-var level_scene:PackedScene=load("res://Scenes/game_over.tscn")
+var level_scene:PackedScene=load("res://Scenes/Level.tscn")
 func _ready() -> void:
     $MarginContainer2/VBoxContainer/HBoxContainer/ScoreUpdater.text=$MarginContainer2/VBoxContainer/HBoxContainer/ScoreUpdater.text+str(Glogal.score)
 func _input(event: InputEvent) -> void:

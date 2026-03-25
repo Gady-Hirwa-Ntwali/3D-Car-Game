@@ -65,7 +65,7 @@ func finish_race():
     var player = get_tree().get_first_node_in_group("player")
     if player:
         player.set_physics_process(false)
-    get_tree().change_scene_to_file("res://Scenes/game_over.tscn")
+    get_tree().call_deferred("change_scene_to_file","res://Scenes/game_over.tscn")
 
 func update_lap():
     if count <= 0:
