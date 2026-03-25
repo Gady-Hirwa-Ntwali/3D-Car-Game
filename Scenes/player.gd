@@ -11,6 +11,9 @@ extends RigidBody3D
 var current_steering = 0.0
 var wheel_spin        = 0.0
 var is_interior_view  = false
+var engine_sound_timer = 0.0
+
+
 
 @onready var wheel_fl     = $Sketchfab_Scene/Sketchfab_model/"176a2ec9ad5b42f386cc8a095b1e1f70_fbx"/RootNode/WheelFront_000
 @onready var wheel_fr     = $Sketchfab_Scene/Sketchfab_model/"176a2ec9ad5b42f386cc8a095b1e1f70_fbx"/RootNode/WheelFront_001
@@ -19,6 +22,8 @@ var is_interior_view  = false
 @onready var exterior_cam = $Camera3D
 @onready var interior_cam = $InternalCamera
 @onready var speed_label = $"../CanvasLayer/Label"
+@onready var engine_sound = $AudioStreamPlayer3D
+@onready var idle_sound = $IdleSound
 
 func _ready() -> void:
 	# Physics damping — handled manually for better feel
@@ -32,9 +37,11 @@ func _ready() -> void:
 	freeze = true
 	await get_tree().process_frame
 	freeze = false
-	contact_monitor = true
-	
-	
+	engine_sound.play()
+	idle_sound.finished.connect(_on_idle_sound_finished)
+	if top_speed == null or top_speed <= 0:top_speed = 120.0 
+
+
 
 	exterior_cam.current = true
 	interior_cam.current = false
@@ -51,7 +58,7 @@ func _physics_process(delta: float) -> void:
 	var throttle = Input.get_axis("move_backward", "move_forward")
 	var steer    = Input.get_axis("steer_right", "steer_left")
 	var speed    = linear_velocity.length()
-	# 📊 SPEEDOMETER
+	
 	var speed_kmh = speed * 3.6
 	speed_label.text = "Speed: " + str(int(speed_kmh)) + " m/s"
 
@@ -78,6 +85,7 @@ func _physics_process(delta: float) -> void:
 	if throttle == 0.0 and speed > 0.1:
 		var drag = -linear_velocity.normalized() * min(brake_force, speed) * mass
 		apply_central_force(drag)
+	
 
 	# ── Wheel visuals ────────────────────────────────────────────────
 	if throttle != 0 and speed > 0.5:
@@ -88,3 +96,18 @@ func _physics_process(delta: float) -> void:
 	wheel_fr.rotation = Vector3(ws, current_steering, 0)
 	wheel_rl.rotation = Vector3(ws, 0, 0)
 	wheel_rr.rotation = Vector3(ws, 0, 0)
+	_handle_engine_sound(delta)
+	
+func _handle_engine_sound(delta)-> void:
+	if Input.is_action_pressed("move_forward") or Input.is_action_pressed("move_backward"):
+		engine_sound_timer= 0.2
+		if not engine_sound.playing:
+			engine_sound.play()
+	else:
+		if engine_sound_timer> 0.0:
+			engine_sound_timer -= delta
+		else:
+			engine_sound.stop()
+			
+func _on_idle_sound_finished() -> void:
+	idle_sound.play()

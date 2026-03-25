@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://biisvv67snm5m"]
+
+[ext_resource type="Texture2D" uid="uid://b8h08xe4ohdr8" path="res://assets/meshes/race_track/13489.jpg" id="1_jmwyh"]
+[ext_resource type="Script" uid="uid://dv8iu2kkcvruj" path="res://Scenes/homescene.gd" id="1_yqx11"]
+[ext_resource type="FontFile" uid="uid://br3vnrm4cqyno" path="res://assets/fonts/subatomic.tsoonami.ttf" id="3_gkkoa"]
+[ext_resource type="AudioStream" uid="uid://d1re4ehwb4vc4" path="res://assets/f1_intro.mp3" id="4_gkkoa"]
+
+[node name="Node2D" type="Control" unique_id=959901737]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_yqx11")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=698942455]
+position = Vector2(964.50006, 513)
+scale = Vector2(2.4062498, 2.2622223)
+texture = ExtResource("1_jmwyh")
+
+[node name="Label" type="Label" parent="." unique_id=199350059]
+layout_mode = 0
+offset_left = 744.0
+offset_top = 851.0
+offset_right = 1287.0
+offset_bottom = 886.0
+theme_override_fonts/font = ExtResource("3_gkkoa")
+theme_override_font_sizes/font_size = 40
+text = "Click space to start "
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=1844610151]
+stream = ExtResource("4_gkkoa")
+volume_db = 11.96
+autoplay = true

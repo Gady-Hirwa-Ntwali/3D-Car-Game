@@ -1,6 +1,10 @@
-CanvasLayer
+AudioStreamPlayer2D
+Control
 Label
+CanvasLayer
+Sprite2D
 AudioStreamPlayer3D
+Area3D
 Camera3D
 RigidBody3D
 VehicleWheel3D
