@@ -3,7 +3,7 @@
 [ext_resource type="Script" uid="uid://dk5qtuvpteplx" path="res://Scenes/player.gd" id="1_v0iea"]
 [ext_resource type="PackedScene" uid="uid://bf0oxl5mnvw8o" path="res://assets/meshes/car/low_poly_f1_car.glb" id="2_cvnsp"]
 [ext_resource type="Script" uid="uid://bqf3pejr2hodv" path="res://Scenes/camera_3d.gd" id="3_6t5aa"]
-[ext_resource type="AudioStream" uid="uid://fpr017esyfxd" path="res://assets/245996__kojkibass__carrera-completa-1er-plano-motor-engine-mono.wav" id="4_vgqql"]
+[ext_resource type="AudioStream" uid="uid://c0sbio6gkochb" path="res://assets/audiomass-output.mp3" id="4_vgqql"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_cvnsp"]
 size = Vector3(21.233303, 13.641545, 58.845184)
@@ -34,7 +34,7 @@ shape = SubResource("BoxShape3D_cvnsp")
 
 [node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="." unique_id=967081258]
 stream = ExtResource("4_vgqql")
-volume_db = 23.427
+volume_db = 13.027
 
 [node name="IdleSound" type="AudioStreamPlayer3D" parent="." unique_id=1076907803]
 stream = SubResource("AudioStreamMP3_vgqql")

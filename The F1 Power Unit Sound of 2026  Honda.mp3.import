@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://mt5dtdspeo6n"
+path="res://.godot/imported/The F1 Power Unit Sound of 2026  Honda.mp3-fea9e87340c557dc41f10ff5f72a7275.mp3str"
+
+[deps]
+
+source_file="res://The F1 Power Unit Sound of 2026  Honda.mp3"
+dest_files=["res://.godot/imported/The F1 Power Unit Sound of 2026  Honda.mp3-fea9e87340c557dc41f10ff5f72a7275.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -4,6 +4,7 @@
 [ext_resource type="Script" uid="uid://dv8iu2kkcvruj" path="res://Scenes/homescene.gd" id="1_yqx11"]
 [ext_resource type="FontFile" uid="uid://br3vnrm4cqyno" path="res://assets/fonts/subatomic.tsoonami.ttf" id="3_gkkoa"]
 [ext_resource type="AudioStream" uid="uid://d1re4ehwb4vc4" path="res://assets/f1_intro.mp3" id="4_gkkoa"]
+[ext_resource type="Texture2D" uid="uid://cgjwsqb3cpfto" path="res://assets/meshes/race_track/formula-1-logo-png_seeklogo-330361.png" id="5_3tgab"]
 
 [node name="Node2D" type="Control" unique_id=959901737]
 layout_mode = 3
@@ -17,10 +18,10 @@ texture = ExtResource("1_jmwyh")
 
 [node name="Label" type="Label" parent="." unique_id=199350059]
 layout_mode = 0
-offset_left = 744.0
-offset_top = 851.0
-offset_right = 1287.0
-offset_bottom = 886.0
+offset_left = 786.0
+offset_top = 850.0
+offset_right = 1329.0
+offset_bottom = 885.0
 theme_override_fonts/font = ExtResource("3_gkkoa")
 theme_override_font_sizes/font_size = 40
 text = "Click space to start "
@@ -29,3 +30,22 @@ text = "Click space to start "
 stream = ExtResource("4_gkkoa")
 volume_db = 11.96
 autoplay = true
+
+[node name="Label2" type="Label" parent="." unique_id=284043712]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = 986.0
+offset_top = 217.0
+offset_right = 1550.0
+offset_bottom = 286.0
+grow_horizontal = 0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("3_gkkoa")
+theme_override_font_sizes/font_size = 80
+text = "FANTASY"
+
+[node name="Formula1LogoPngSeeklogo330361" type="Sprite2D" parent="." unique_id=1588812629]
+position = Vector2(827, 247)
+texture = ExtResource("5_3tgab")

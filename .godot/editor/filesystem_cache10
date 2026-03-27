@@ -1,14 +1,13 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1774459156
+::res://::1774602554
 icon.svg::CompressedTexture2D::954520891496342175::1774200087::1774201122::1::::<><><>0<>0<>a5b83ed145154c62d882049514710a61<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
 README.md::TextFile::-1::1774200087::0::1::::<><><>0<>0<><>::
-::res://assets/::1774465597
-245996__kojkibass__carrera-completa-1er-plano-motor-engine-mono.wav::AudioStreamWAV::382988133473301509::1774374520::1774374526::1::::<><><>0<>0<>68ace087a02a74814c33a3012e25b7e8<>res://.godot/imported/245996__kojkibass__carrera-completa-1er-plano-motor-engine-mono.wav-b4a82493937fc15796332e6ef25b8644.sample::
+The F1 Power Unit Sound of 2026  Honda.mp3::AudioStreamMP3::883317171564356083::1774602345::1774602487::1::::<><><>0<>0<>85c83773a226ac5ce3c06ee8fd86495d<>res://.godot/imported/The F1 Power Unit Sound of 2026  Honda.mp3-fea9e87340c557dc41f10ff5f72a7275.mp3str::
+::res://assets/::1774603835
+audiomass-output.mp3::AudioStreamMP3::6564797044756460935::1774603817::1774603843::1::::<><><>0<>0<>763e558428c9eb12e85de4d8f09de95b<>res://.godot/imported/audiomass-output.mp3-9a7b80fcba27cc7fa6b28088fbf1ae6d.mp3str::
 engine.wav::AudioStreamWAV::2105430999091551293::1774263034::1774428537::1::::<><><>0<>0<>e1dde8c219c74196935cd231170e0b4d<>res://.godot/imported/engine.wav-cc4df8df683a7f5419ef7019228b045a.sample::
 f1_intro.mp3::AudioStreamMP3::9019561285390580525::1774205144::1774434841::1::::<><><>0<>0<>b7d7fa3521f895f99a87348a9e47c7ca<>res://.godot/imported/f1_intro.mp3-8686e57c7973ce28c593d71a7f84e8fb.mp3str::
-freesound_community-audi-v8-acceleration-sound-6067.mp3::AudioStreamMP3::7360894279996168575::1774430459::1774430459::1::::<><><>0<>0<>4e57d0298f02cb6a56f0e25a2bbe4c64<>res://.godot/imported/freesound_community-audi-v8-acceleration-sound-6067.mp3-368985011040f7ef302a3eb0b153e6c0.mp3str::
-freesound_community-car-idle-84718.mp3::AudioStreamMP3::1918711773585700920::1774428940::1774428941::1::::<><><>0<>0<>4cec50aedf662592abe9bc8c9dca1474<>res://.godot/imported/freesound_community-car-idle-84718.mp3-76a8944fcea201860b34170edb011035.mp3str::
-Hans Zimmer_ F1, The Movie Theme [Extended by Gilles Nuytens].mp3::AudioStreamMP3::18816832406032573::1774253549::1774465603::1::::<><><>0<>0<>d09d241a18b5d40a74c9ddb847a6be19<>res://.godot/imported/Hans Zimmer_ F1, The Movie Theme [Extended by Gilles Nuytens].mp3-9b1777d3e48b9afe878811ff5e1a02a0.mp3str::
+Hans Zimmer_ F1, The Movie Theme [Extended by Gilles Nuytens].mp3::AudioStreamMP3::2339905240116317104::1774253549::1774598047::1::::<><><>0<>0<>d7fe87c0c610e4f964b97edf0d5aa4fc<>res://.godot/imported/Hans Zimmer_ F1, The Movie Theme [Extended by Gilles Nuytens].mp3-9b1777d3e48b9afe878811ff5e1a02a0.mp3str::
 Tate McRae - Just Keep Watching (From F1® The Movie) (Official Video) (2).mp3::AudioStreamMP3::5387989297029818064::1774207037::1774465603::1::::<><><>0<>0<>58ad562b092fd7df16f636568018d8a0<>res://.godot/imported/Tate McRae - Just Keep Watching (From F1® The Movie) (Official Video) (2).mp3-18e3faa1b10d992122e91056b2f96e9e.mp3str::
 ::res://assets/fonts/::1774201122
 DepartureMono-Regular.otf::FontFile::416319548083953604::1774200087::1774201122::1::::<><><>0<>0<>51f335ec5ef3401aa55b9ec756046b95<>res://.godot/imported/DepartureMono-Regular.otf-244c415841734030154a5529dddbb944.fontdata::
@@ -18,15 +17,16 @@ lighting.png::CompressedTexture2D::8430351355386181993::1774200087::1774201122::
 ::res://assets/meshes/::1774200087
 ::res://assets/meshes/car/::1774201129
 low_poly_f1_car.glb::PackedScene::2789866081557733952::1774200087::1774201129::1::::<><><>0<>0<>e2ece454b9803c32edd3723de04070eb<>res://.godot/imported/low_poly_f1_car.glb-c5c9c31ec6aef8a7fb87ff0e47f6144f.scn::
-::res://assets/meshes/race_track/::1774433717
+::res://assets/meshes/race_track/::1774602486
 13489.jpg::CompressedTexture2D::4718681239597497511::1774433716::1774433717::1::::<><><>0<>0<>73f2cb89eb952f051a7c0f1d4dfd8da4<>res://.godot/imported/13489.jpg-12f1a20fb7f7cc67d0781e36d4ea0c29.ctex::
+formula-1-logo-png_seeklogo-330361.png::CompressedTexture2D::5213922590325952000::1774600674::1774600675::1::::<><><>0<>0<>14c8f7f6073d6a149d711a0f3d7157de<>res://.godot/imported/formula-1-logo-png_seeklogo-330361.png-4b5404677e0aab1a28864af9f1122332.ctex::
 race_track_mesh.obj::Mesh::100635921383050560::1774200087::1774201126::1::::<><><>0<>0<>3463ba7eb3a5adbc26c4b795484344b3<>res://.godot/imported/race_track_mesh.obj-42cbb2494018a4fe425872370fc766be.mesh<*>res://.godot/imported/race_track_mesh.obj-42cbb2494018a4fe425872370fc766be.mesh::
 race_track_texture.png::CompressedTexture2D::3252926722043233254::1774200087::1774201124::1::::<><><>0<>0<>81b1b545c2a050fd1264e7d9c429f6fd<>res://.godot/imported/race_track_texture.png-a8f3aea22d4f93b49a5e59ec0ce8dc18.s3tc.ctex::
-::res://Scenes/::1774459134
+::res://Scenes/::1774602655
 camera_3d.gd::GDScript::3521491158183367547::1774362019::0::1::::<>Camera3D<><>0<>0<><>::
 car.tscn::PackedScene::6000996192371162862::1774200087::0::1::::<><><>0<>0<><>::uid://bf0oxl5mnvw8o::::res://assets/meshes/car/low_poly_f1_car.glb
 homescene.gd::GDScript::8701875119218556157::1774453554::0::1::::<>Control<><>0<>0<><>::
-homescene.tscn::PackedScene::2965578014729440896::1774449320::0::1::::<><><>0<>0<><>::uid://b8h08xe4ohdr8::::res://assets/meshes/race_track/13489.jpg<>uid://dv8iu2kkcvruj::::res://Scenes/homescene.gd<>uid://br3vnrm4cqyno::::res://assets/fonts/subatomic.tsoonami.ttf<>uid://d1re4ehwb4vc4::::res://assets/f1_intro.mp3
+homescene.tscn::PackedScene::2965578014729440896::1774600766::0::1::::<><><>0<>0<><>::uid://b8h08xe4ohdr8::::res://assets/meshes/race_track/13489.jpg<>uid://dv8iu2kkcvruj::::res://Scenes/homescene.gd<>uid://br3vnrm4cqyno::::res://assets/fonts/subatomic.tsoonami.ttf<>uid://d1re4ehwb4vc4::::res://assets/f1_intro.mp3<>uid://cgjwsqb3cpfto::::res://assets/meshes/race_track/formula-1-logo-png_seeklogo-330361.png
 Level.tscn::PackedScene::8722808051538776000::1774372889::0::1::::<><><>0<>0<><>::uid://bxg3vjaykjay7::::res://Scenes/player.tscn<>uid://bml0h0ns33uo1::::res://assets/meshes/race_track/race_track_texture.png<>uid://bo0purqduftw::::res://assets/meshes/race_track/race_track_mesh.obj
 player.gd::GDScript::7924088305664869049::1774459128::0::1::::<>RigidBody3D<><>0<>0<><>::
-player.tscn::PackedScene::4014888405175987768::1774459134::0::1::::<><><>0<>0<><>::uid://dk5qtuvpteplx::::res://Scenes/player.gd<>uid://bf0oxl5mnvw8o::::res://assets/meshes/car/low_poly_f1_car.glb<>uid://bqf3pejr2hodv::::res://Scenes/camera_3d.gd<>uid://fpr017esyfxd::::res://assets/245996__kojkibass__carrera-completa-1er-plano-motor-engine-mono.wav<>uid://2lo5xnfbg2mu::::res://assets/freesound_community-car-idle-84718.mp3
+player.tscn::PackedScene::4014888405175987768::1774602655::0::1::::<><><>0<>0<><>::uid://dk5qtuvpteplx::::res://Scenes/player.gd<>uid://bf0oxl5mnvw8o::::res://assets/meshes/car/low_poly_f1_car.glb<>uid://bqf3pejr2hodv::::res://Scenes/camera_3d.gd<>uid://mt5dtdspeo6n::::res://The F1 Power Unit Sound of 2026  Honda.mp3
