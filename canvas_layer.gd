@@ -11,25 +11,19 @@ static var img = preload("res://assets/icons/lighting.png")
 
 func _ready():
 	countdown_label.text = str(count)
-	time_label.text = "00:00:00" 
-	set_health(GameEvents.total_lives)
-	GameEvents.life_lost.connect(_on_life_lost)
+	time_label.text = "00:00:00"
+	 
 	start_timer.start()
+func _process(delta: float) -> void:
+	print(Global.time)	
 
-func _on_life_lost(remaining_lives):
-	set_health(remaining_lives)
-
-func set_health(amount):
-	var health_container = $MarginContainer/HBoxContainer
-	for child in health_container.get_children():
+func set_life(life):
+	for child in $MarginContainer/HBoxContainer.get_children():
 		child.queue_free()
-	for i in range(amount):
+	for i in life:
 		var text_rect = TextureRect.new()
 		text_rect.texture = img
-		text_rect.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
-		text_rect.custom_minimum_size = Vector2(40, 40)
-		text_rect.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_CENTERED
-		health_container.add_child(text_rect)
+		$MarginContainer/HBoxContainer.add_child(text_rect)
 
 func _on_start_timer_timeout():
 	count -= 1
@@ -49,7 +43,7 @@ func _on_clock_timer_timeout():
 	var seconds = (total_msecs / 100) % 60
 	var minutes = (total_msecs / 6000)   
 	time_label.text = "%02d:%02d:%02d" % [minutes, seconds, msecs]
-
+	Global.time = time_label.text
 func stop_race():
 	clock_timer.stop()
 	countdown_label.show()

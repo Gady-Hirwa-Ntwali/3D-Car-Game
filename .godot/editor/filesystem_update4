@@ -1,5 +1,12 @@
-res://Scenes/player.gd
 res://Scenes/Level.tscn
 res://Scenes/level.gd
-res://Scenes/player.tscn
 res://Scenes/area_3d.gd
+res://Scenes/uiN.tscn
+res://canvas_layer.gd
+res://Scenes/uiN.gd
+res://Scenes/player.tscn
+res://Scenes/game_over.tscn
+res://Scenes/game_over.gd
+res://dnf.tscn
+res://Global/Glogal.gd
+res://Scenes/Global.gd

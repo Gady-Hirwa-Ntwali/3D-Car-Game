@@ -1,19 +1,22 @@
 [gd_scene format=3 uid="uid://1wohuusncabw"]
 
 [ext_resource type="Texture2D" uid="uid://c2fb6dm6sgngx" path="res://assets/GettyImages-2103192832.jpg.webp" id="1_27ltx"]
+[ext_resource type="Script" uid="uid://df6t4jh6rs44s" path="res://Scenes/game_over.gd" id="1_k7nsv"]
 [ext_resource type="FontFile" uid="uid://br3vnrm4cqyno" path="res://assets/fonts/subatomic.tsoonami.ttf" id="2_k7nsv"]
 
-[node name="Dnf" type="Control" unique_id=1796829557]
+[node name="Dnf" type="Control" unique_id=1796829557 node_paths=PackedStringArray("timer")]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_k7nsv")
+timer = NodePath("MarginContainer2/VBoxContainer/HBoxContainer/Time")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=707559085]
-position = Vector2(970.49994, 517.5)
-scale = Vector2(2.5328948, 2.4369159)
+position = Vector2(566.00006, 319)
+scale = Vector2(1.5502615, 1.5085468)
 texture = ExtResource("1_27ltx")
 
 [node name="MarginContainer2" type="MarginContainer" parent="." unique_id=711192299]
@@ -43,14 +46,14 @@ text = "DNF"
 layout_mode = 2
 size_flags_horizontal = 4
 
-[node name="ScoreLabel" type="Label" parent="MarginContainer2/VBoxContainer/HBoxContainer" unique_id=1496018431]
+[node name="Time label" type="Label" parent="MarginContainer2/VBoxContainer/HBoxContainer" unique_id=1496018431]
 layout_mode = 2
 theme_override_colors/font_color = Color(0.41960785, 1, 1, 1)
 theme_override_fonts/font = ExtResource("2_k7nsv")
 theme_override_font_sizes/font_size = 80
-text = "Score:"
+text = "Time:"
 
-[node name="ScoreUpdater" type="Label" parent="MarginContainer2/VBoxContainer/HBoxContainer" unique_id=989291306]
+[node name="Time" type="Label" parent="MarginContainer2/VBoxContainer/HBoxContainer" unique_id=989291306]
 layout_mode = 2
 theme_override_colors/font_color = Color(0.41960785, 1, 1, 1)
 theme_override_fonts/font = ExtResource("2_k7nsv")
@@ -64,12 +67,13 @@ anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-offset_left = -676.5
-offset_top = -361.0
-offset_right = 676.5
-offset_bottom = -309.0
+offset_left = -383.0
+offset_top = -247.0
+offset_right = 970.0
+offset_bottom = -178.0
 grow_horizontal = 2
 grow_vertical = 0
+scale = Vector2(0.63573575, 1.0087805)
 
 [node name="restart" type="Label" parent="MarginContainer" unique_id=778030968]
 layout_mode = 2

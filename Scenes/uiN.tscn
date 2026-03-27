@@ -2,20 +2,25 @@
 
 [ext_resource type="Script" uid="uid://cajol08qjjv8w" path="res://canvas_layer.gd" id="1_uy1xk"]
 [ext_resource type="FontFile" uid="uid://br3vnrm4cqyno" path="res://assets/fonts/subatomic.tsoonami.ttf" id="2_8373j"]
+[ext_resource type="Texture2D" uid="uid://dsdywjlmownkr" path="res://assets/icons/lighting.png" id="2_gwqcb"]
 
-[node name="ui" type="CanvasLayer" unique_id=740029953]
+[node name="ui" type="CanvasLayer" unique_id=740029953 groups=["ui"]]
 script = ExtResource("1_uy1xk")
 
 [node name="MarginContainer" type="MarginContainer" parent="." unique_id=759910505]
-offset_right = 40.0
-offset_bottom = 40.0
+offset_left = 21.0
+offset_top = 20.999998
+offset_right = 169.0
+offset_bottom = 149.0
+scale = Vector2(0.35999918, 0.3199998)
 theme_override_constants/margin_left = 20
 
 [node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer" unique_id=1065145920]
 layout_mode = 2
 
-[node name="text_rect" type="TextureRect" parent="MarginContainer/HBoxContainer" unique_id=1728415020]
+[node name="text_rect" type="TextureRect" parent="MarginContainer/HBoxContainer" unique_id=1728415020 groups=["ui"]]
 layout_mode = 2
+texture = ExtResource("2_gwqcb")
 
 [node name="countdownLabel" type="Label" parent="." unique_id=1460173172]
 unique_name_in_owner = true

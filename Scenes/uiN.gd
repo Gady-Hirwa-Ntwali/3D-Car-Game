@@ -7,29 +7,24 @@ extends CanvasLayer
 
 var count = 3
 var total_msecs = 0
-static var img = preload("res://assets/icons/lighting.png")
+static var img = load("res://assets/icons/lighting.png")
 
 func _ready():
 	countdown_label.text = str(count)
 	time_label.text = "00:00:00" 
-	set_health(GameEvents.total_lives)
-	GameEvents.life_lost.connect(_on_life_lost)
-	start_timer.start()
 
-func _on_life_lost(remaining_lives):
-	set_health(remaining_lives)
-
-func set_health(amount):
+func set_life(amount):
 	var health_container = $MarginContainer/HBoxContainer
 	for child in health_container.get_children():
 		child.queue_free()
-	for i in range(amount):
+	for i in amount:
 		var text_rect = TextureRect.new()
 		text_rect.texture = img
 		text_rect.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
 		text_rect.custom_minimum_size = Vector2(40, 40)
 		text_rect.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_CENTERED
 		health_container.add_child(text_rect)
+	
 
 func _on_start_timer_timeout():
 	count -= 1

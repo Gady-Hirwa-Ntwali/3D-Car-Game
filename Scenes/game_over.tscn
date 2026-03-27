@@ -1,6 +1,5 @@
 [gd_scene format=3 uid="uid://csbsqwwsr5q3x"]
 
-[ext_resource type="Script" uid="uid://df6t4jh6rs44s" path="res://Scenes/game_over.gd" id="1_ek8ke"]
 [ext_resource type="Texture2D" uid="uid://dn66b0gcq723r" path="res://assets/thumb-1920-371748.jpg" id="1_yxx3c"]
 [ext_resource type="FontFile" uid="uid://br3vnrm4cqyno" path="res://assets/fonts/subatomic.tsoonami.ttf" id="2_ccer4"]
 
@@ -11,11 +10,10 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_ek8ke")
 
 [node name="BG" type="Sprite2D" parent="." unique_id=605395986]
-position = Vector2(959.49994, 510.5)
-scale = Vector2(1.0015625, 0.9416666)
+position = Vector2(574.00006, 316.99997)
+scale = Vector2(0.60057956, 0.5886532)
 texture = ExtResource("1_yxx3c")
 
 [node name="MarginContainer2" type="MarginContainer" parent="." unique_id=224862224]
@@ -23,10 +21,12 @@ layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
-offset_left = -263.25
-offset_right = 263.25
-offset_bottom = 177.0
+offset_left = -451.0
+offset_top = 76.99999
+offset_right = 720.0
+offset_bottom = 292.0
 grow_horizontal = 2
+scale = Vector2(0.80491495, 0.8235913)
 theme_override_constants/margin_top = 31
 
 [node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer2" unique_id=110895293]
@@ -65,11 +65,13 @@ anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-offset_left = -622.0
-offset_top = -84.0
-offset_right = 622.0
+offset_left = -450.0
+offset_top = -154.0
+offset_right = 794.0
+offset_bottom = -70.0
 grow_horizontal = 2
 grow_vertical = 0
+scale = Vector2(0.70231503, 0.88832885)
 theme_override_constants/margin_right = 24
 theme_override_constants/margin_bottom = 13
 

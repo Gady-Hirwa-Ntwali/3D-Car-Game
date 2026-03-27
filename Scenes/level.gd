@@ -1,13 +1,8 @@
 extends Node3D
-
-
-# Called when the node enters the scene tree for the first time.
+var life:= 6
 func _ready() -> void:
-	pass # Replace with function body.
-
-
-
-
+	pass 
 
 func _on_finish_line_body_entered(body: Node3D) -> void:
-	print("body entered", body.name)
+	life -= 1
+	print("finish line", life)
