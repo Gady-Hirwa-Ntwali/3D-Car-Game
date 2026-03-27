@@ -1,2 +1,6 @@
 res://Scenes/player.tscn
 res://Scenes/player.gd
+res://Scenes/camera_3d.gd
+res://Scenes/homescene.gd
+res://Scenes/Level.tscn
+res://Scenes/homescene.tscn
