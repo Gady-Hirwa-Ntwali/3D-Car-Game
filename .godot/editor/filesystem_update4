@@ -15,3 +15,5 @@ res://Scenes/Won.tscn
 res://UI.tscn
 res://UI.gd
 res://Scenes/won.gd
+res://Scenes/camera_3d.gd
+res://Scenes/homescene.gd
