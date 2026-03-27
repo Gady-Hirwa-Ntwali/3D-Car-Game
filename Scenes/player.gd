@@ -10,6 +10,7 @@ extends RigidBody3D
 var current_steering = 0.0
 var wheel_spin        = 0.0
 var is_interior_view  = false
+var can_input_work = false
 
 @onready var wheel_fl     = $Sketchfab_Scene/Sketchfab_model/"176a2ec9ad5b42f386cc8a095b1e1f70_fbx"/RootNode/WheelFront_000
 @onready var wheel_fr     = $Sketchfab_Scene/Sketchfab_model/"176a2ec9ad5b42f386cc8a095b1e1f70_fbx"/RootNode/WheelFront_001
@@ -20,14 +21,13 @@ var is_interior_view  = false
 @onready var speed_label  = $"../CanvasLayer/Label"
 
 func _ready() -> void:
-	global_transform.origin.y += 0.5
-	linear_damp  = 0.5
-	angular_damp = 5.0
 	exterior_cam.current = true
 	interior_cam.current = false
+	await get_tree().create_timer(4.0).timeout
+	can_input_work = true
 
 func _input(event):
-	if Input.is_action_just_pressed("toggle_camera"):
+	if can_input_work and Input.is_action_just_pressed("toggle_camera"):
 		is_interior_view = !is_interior_view
 		exterior_cam.current = !is_interior_view
 		interior_cam.current = is_interior_view
@@ -75,7 +75,7 @@ func _physics_process(delta: float) -> void:
 		rotate_y(current_steering * steer_speed * delta)
 
 	# ── Engine force ──────────────────────────────────────────────
-	if speed < top_speed or throttle < 0:
+	if can_input_work and speed < top_speed or throttle < 0:
 		var forward = -global_transform.basis.z * throttle
 		apply_central_force(forward * max_engine_force * mass)
 
@@ -85,7 +85,7 @@ func _physics_process(delta: float) -> void:
 	linear_velocity = global_transform.basis * local_vel
 
 	# ── Braking ───────────────────────────────────────────────────
-	if throttle == 0.0 and speed > 0.1:
+	if can_input_work and  throttle == 0.0 and speed > 0.1:
 		var drag = -linear_velocity.normalized() * min(brake_force, speed) * mass
 		apply_central_force(drag)
 

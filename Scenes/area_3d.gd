@@ -9,4 +9,4 @@ func _on_body_entered(body: Node3D) -> void:
 	print("remaining life: ", life)
 	get_tree().call_group("ui", "set_life", life)
 	if life <= 0:
-		get_tree().change_scene_to_file("res://dnf.tscn")
+		get_tree().call_deferred("change_scene_to_file","res://dnf.tscn")

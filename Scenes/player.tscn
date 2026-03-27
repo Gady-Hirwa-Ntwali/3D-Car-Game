@@ -12,7 +12,7 @@ data = PackedByteArray("//vQZAAP8AAAaQAAAAgAAA0gAAABAAABpAAAACAAADSAAAAETEFNRTMu
 size = Vector3(21.233303, 13.641545, 57.850525)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_6t5aa"]
-size = Vector3(36.904358, 17.250748, 63.147507)
+size = Vector3(17.472004, 17.250748, 63.147507)
 
 [node name="Player" type="RigidBody3D" unique_id=596662594]
 transform = Transform3D(0.9991888, 0, -0.040271305, 0, 1, 0, 0.040271305, 0, 0.9991888, -0.451, 0.4, 0)
@@ -47,7 +47,7 @@ collision_mask = 2
 script = ExtResource("4_vgqql")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D" unique_id=539460499]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.5692585, 6.923697, -1.0918323)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.2660797, 6.923697, -1.0918324)
 shape = SubResource("BoxShape3D_6t5aa")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
