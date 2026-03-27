@@ -1,10 +1,10 @@
+Area3D
+CollisionShape3D
+Timer
 Label
 HBoxContainer
-CollisionShape3D
-Area3D
 CanvasLayer
 AudioStreamPlayer3D
-Timer
 TextureRect
 MarginContainer
 CanvasLayer
