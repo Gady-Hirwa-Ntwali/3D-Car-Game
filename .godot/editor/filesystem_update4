@@ -10,3 +10,8 @@ res://Scenes/game_over.gd
 res://dnf.tscn
 res://Global/Glogal.gd
 res://Scenes/Global.gd
+res://Scenes/player.gd
+res://Scenes/Won.tscn
+res://UI.tscn
+res://UI.gd
+res://Scenes/won.gd

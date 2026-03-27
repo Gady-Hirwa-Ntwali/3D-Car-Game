@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://w08j3j2fs07c"]
 
-[ext_resource type="Script" uid="uid://cajol08qjjv8w" path="res://canvas_layer.gd" id="1_uy1xk"]
+[ext_resource type="Script" uid="uid://cajol08qjjv8w" path="res://UI.gd" id="1_uy1xk"]
 [ext_resource type="FontFile" uid="uid://br3vnrm4cqyno" path="res://assets/fonts/subatomic.tsoonami.ttf" id="2_8373j"]
 [ext_resource type="Texture2D" uid="uid://dsdywjlmownkr" path="res://assets/icons/lighting.png" id="2_gwqcb"]
 
@@ -18,7 +18,7 @@ theme_override_constants/margin_left = 20
 [node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer" unique_id=1065145920]
 layout_mode = 2
 
-[node name="text_rect" type="TextureRect" parent="MarginContainer/HBoxContainer" unique_id=1728415020 groups=["ui"]]
+[node name="Life" type="TextureRect" parent="MarginContainer/HBoxContainer" unique_id=1728415020 groups=["ui"]]
 layout_mode = 2
 texture = ExtResource("2_gwqcb")
 
@@ -57,6 +57,15 @@ offset_right = 20.0
 offset_bottom = 23.0
 grow_horizontal = 2
 theme_override_font_sizes/font_size = 30
+
+[node name="laps" type="Label" parent="." unique_id=1709978177 groups=["ui"]]
+offset_left = 29.0
+offset_top = 79.0
+offset_right = 126.00001
+offset_bottom = 93.0
+theme_override_fonts/font = ExtResource("2_8373j")
+theme_override_font_sizes/font_size = 30
+text = "Laps: 0/2"
 
 [connection signal="timeout" from="startTimer" to="." method="_on_start_timer_timeout"]
 [connection signal="timeout" from="startTimer/clockTimer" to="." method="_on_clock_timer_timeout"]

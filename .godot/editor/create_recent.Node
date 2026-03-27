@@ -1,12 +1,11 @@
+Label
 CollisionShape3D
 Area3D
 StaticBody3D
 RigidBody3D
 MeshInstance3D
 CanvasLayer
-Label
 AudioStreamPlayer3D
-Label
 Timer
 TextureRect
 HBoxContainer
