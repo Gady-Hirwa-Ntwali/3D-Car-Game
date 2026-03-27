@@ -15,8 +15,8 @@ script = ExtResource("1_k7nsv")
 timer = NodePath("MarginContainer2/VBoxContainer/HBoxContainer/Time")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=707559085]
-position = Vector2(566.00006, 319)
-scale = Vector2(1.5502615, 1.5085468)
+position = Vector2(958.9504, 511.5855)
+scale = Vector2(2.5211835, 2.3710957)
 texture = ExtResource("1_27ltx")
 
 [node name="MarginContainer2" type="MarginContainer" parent="." unique_id=711192299]

@@ -5,6 +5,7 @@ extends CanvasLayer
 @onready var start_timer = %startTimer
 @onready var clock_timer = %clockTimer
 @onready var laps = $laps
+@onready var bipSound = $AudioStreamPlayer3D
 
 var count = 3
 var total_msecs = 0
@@ -28,6 +29,7 @@ func set_life(life):
 		$MarginContainer/HBoxContainer.add_child(text_rect)
 
 func _on_start_timer_timeout():
+	#bipSound.play()
 	count -= 1
 	if count > 0:
 		countdown_label.text = str(count)

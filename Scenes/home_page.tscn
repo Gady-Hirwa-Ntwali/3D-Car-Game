@@ -1,0 +1,45 @@
+[gd_scene format=3 uid="uid://llq6sxa77y8o"]
+
+[ext_resource type="Script" uid="uid://c40288jj2wkv" path="res://Scenes/home_page.gd" id="1_3e5ya"]
+[ext_resource type="Texture2D" uid="uid://dvi7wv7sikdnv" path="res://assets/13489.jpg" id="2_3uk7k"]
+[ext_resource type="FontFile" uid="uid://br3vnrm4cqyno" path="res://assets/fonts/subatomic.tsoonami.ttf" id="3_ae3v7"]
+[ext_resource type="AudioStream" uid="uid://d1re4ehwb4vc4" path="res://assets/f1_intro.mp3" id="4_wllm3"]
+[ext_resource type="Texture2D" uid="uid://bmqs52mkq6hxt" path="res://assets/formula-1-logo-png_seeklogo-330361.png" id="5_wllm3"]
+
+[node name="HomePage" type="Control" unique_id=926147642]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_3e5ya")
+
+[node name="TextureRect" type="Sprite2D" parent="." unique_id=1081759475]
+position = Vector2(961.00006, 508.99997)
+scale = Vector2(2.4, 2.3066666)
+texture = ExtResource("2_3uk7k")
+
+[node name="Label" type="Label" parent="." unique_id=1767615705]
+layout_mode = 0
+offset_left = 728.0
+offset_top = 866.0
+offset_right = 1255.0
+offset_bottom = 904.0
+theme_override_fonts/font = ExtResource("3_ae3v7")
+theme_override_font_sizes/font_size = 40
+text = "Click space to start"
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=390138244]
+stream = ExtResource("4_wllm3")
+autoplay = true
+
+[node name="Label2" type="Label" parent="." unique_id=599649061]
+layout_mode = 0
+offset_left = 909.0
+offset_top = 256.0
+offset_right = 1325.0
+offset_bottom = 325.0
+theme_override_fonts/font = ExtResource("3_ae3v7")
+theme_override_font_sizes/font_size = 80
+text = "FANTASY"
+
+[node name="Formula1LogoPngSeeklogo330361" type="Sprite2D" parent="." unique_id=1741748676]
+position = Vector2(733, 291)
+texture = ExtResource("5_wllm3")

@@ -15,8 +15,8 @@ script = ExtResource("1_dps1s")
 time = NodePath("MarginContainer2/VBoxContainer/HBoxContainer/value")
 
 [node name="BG" type="Sprite2D" parent="." unique_id=605395986]
-position = Vector2(574.00006, 316.99997)
-scale = Vector2(0.60057956, 0.5886532)
+position = Vector2(958.22186, 520.0636)
+scale = Vector2(1.0008106, 0.96469694)
 texture = ExtResource("1_875fx")
 
 [node name="MarginContainer2" type="MarginContainer" parent="." unique_id=224862224]

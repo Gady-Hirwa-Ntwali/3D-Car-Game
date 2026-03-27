@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://cajol08qjjv8w" path="res://UI.gd" id="1_uy1xk"]
 [ext_resource type="FontFile" uid="uid://br3vnrm4cqyno" path="res://assets/fonts/subatomic.tsoonami.ttf" id="2_8373j"]
 [ext_resource type="Texture2D" uid="uid://dsdywjlmownkr" path="res://assets/icons/lighting.png" id="2_gwqcb"]
+[ext_resource type="AudioStream" uid="uid://bnf74anbpbfyo" path="res://assets/Audio/bipbip.mp3" id="4_gwqcb"]
 
 [node name="ui" type="CanvasLayer" unique_id=740029953 groups=["ui"]]
 script = ExtResource("1_uy1xk")
@@ -66,6 +67,11 @@ offset_bottom = 93.0
 theme_override_fonts/font = ExtResource("2_8373j")
 theme_override_font_sizes/font_size = 30
 text = "Laps: 0/2"
+
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="." unique_id=1880270454]
+stream = ExtResource("4_gwqcb")
+volume_db = 32.803
+autoplay = true
 
 [connection signal="timeout" from="startTimer" to="." method="_on_start_timer_timeout"]
 [connection signal="timeout" from="startTimer/clockTimer" to="." method="_on_clock_timer_timeout"]

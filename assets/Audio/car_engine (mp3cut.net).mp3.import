@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://byedi86s30gju"
+path="res://.godot/imported/car_engine (mp3cut.net).mp3-a055218d2870c6628abaff57ae285fae.mp3str"
+
+[deps]
+
+source_file="res://assets/Audio/car_engine (mp3cut.net).mp3"
+dest_files=["res://.godot/imported/car_engine (mp3cut.net).mp3-a055218d2870c6628abaff57ae285fae.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
