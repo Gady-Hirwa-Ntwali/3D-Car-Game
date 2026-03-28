@@ -1,10 +1,11 @@
 extends Area3D
 var life:= 6
-# Called when the node enters the scene tree for the first time.
+signal collision
 func _ready() -> void:
 	get_tree().call_group("ui", "set_life", life)
 
 func _on_body_entered(body: Node3D) -> void:
+	collision.emit()
 	life -= 1
 	print("remaining life: ", life)
 	get_tree().call_group("ui", "set_life", life)
