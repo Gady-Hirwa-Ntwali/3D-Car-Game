@@ -1,10 +1,10 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1774636308
+::res://::1774679398
 dnf.tscn::PackedScene::1871189865832601688::1774634262::0::1::::<><><>0<>0<><>::uid://c2fb6dm6sgngx::::res://assets/GettyImages-2103192832.jpg.webp<>uid://df6t4jh6rs44s::::res://Scenes/game_over.gd<>uid://br3vnrm4cqyno::::res://assets/fonts/subatomic.tsoonami.ttf
 icon.svg::CompressedTexture2D::954520891496342175::1773857441::1773857524::1::::<><><>0<>0<>a5b83ed145154c62d882049514710a61<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
 README.md::TextFile::-1::1773857441::0::1::::<><><>0<>0<><>::
 time_label.gd::GDScript::-1::1774632778::0::1::::<>Label<><>0<>0<><>::
-UI.gd::GDScript::4792291813606096740::1774632778::0::1::::<>CanvasLayer<><>0<>0<><>::
+UI.gd::GDScript::4792291813606096740::1774636605::0::1::::<>CanvasLayer<><>0<>0<><>::
 ::res://assets/::1774636308
 13489.jpg::CompressedTexture2D::8651726173997915627::1774632926::1774632928::1::::<><><>0<>0<>2674d26118308896f4f58c162026ce7d<>res://.godot/imported/13489.jpg-d0146716cf25d9ac5d93ddc97ee25289.ctex::
 engine.wav::AudioStreamWAV::2105430999091551293::1774632778::1774632791::1::::<><><>0<>0<>fa035772a26da90ab7395f01e9b69221<>res://.godot/imported/engine.wav-cc4df8df683a7f5419ef7019228b045a.sample::
@@ -33,7 +33,7 @@ race_track_mesh.obj::Mesh::100635921383050560::1773857441::1773857525::1::::<><>
 race_track_texture.png::CompressedTexture2D::3252926722043233254::1773857441::1773987649::1::::<><><>0<>0<>81b1b545c2a050fd1264e7d9c429f6fd<>res://.godot/imported/race_track_texture.png-a8f3aea22d4f93b49a5e59ec0ce8dc18.s3tc.ctex::
 ::res://Global/::1774632778
 Glogal.gd::GDScript::7373851841682531320::1774632778::0::1::::<>Node<><>0<>0<><>::
-::res://Scenes/::1774635331
+::res://Scenes/::1774636690
 area_3d.gd::GDScript::7163063572611217437::1774632778::0::1::::<>Area3D<><>0<>0<><>::
 camera_3d.gd::GDScript::3521491158183367547::1774632778::0::1::::<>Camera3D<><>0<>0<><>::
 car.tscn::PackedScene::6000996192371162862::1774168661::0::1::::<><><>0<>0<><>::uid://bf0oxl5mnvw8o::::res://assets/meshes/car/low_poly_f1_car.glb
@@ -45,8 +45,8 @@ home_page.tscn::PackedScene::795813247803182480::1774634611::0::1::::<><><>0<>0<
 level.gd::GDScript::4444469993022104398::1774632778::0::1::::<>Node3D<><>0<>0<><>::
 Level.tscn::PackedScene::8722808051538776000::1774632778::0::1::::<><><>0<>0<><>::uid://bxg3vjaykjay7::::res://Scenes/player.tscn<>uid://bml0h0ns33uo1::::res://assets/meshes/race_track/race_track_texture.png<>uid://bo0purqduftw::::res://assets/meshes/race_track/race_track_mesh.obj<>uid://b4k61h1w5dwfu::::res://Scenes/level.gd<>uid://w08j3j2fs07c::::res://Scenes/uiN.tscn
 player.gd::GDScript::7924088305664869049::1774632778::0::1::::<>RigidBody3D<><>0<>0<><>::
-player.tscn::PackedScene::4014888405175987768::1774635331::0::1::::<><><>0<>0<><>::uid://dk5qtuvpteplx::::res://Scenes/player.gd<>uid://bf0oxl5mnvw8o::::res://assets/meshes/car/low_poly_f1_car.glb<>uid://bqf3pejr2hodv::::res://Scenes/camera_3d.gd<>uid://dab3u00i1ff86::::res://Scenes/area_3d.gd<>uid://cd743xtt1khpr::::res://assets/Audio/soft-engine_2.wav
+player.tscn::PackedScene::4014888405175987768::1774636507::0::1::::<><><>0<>0<><>::uid://dk5qtuvpteplx::::res://Scenes/player.gd<>uid://bf0oxl5mnvw8o::::res://assets/meshes/car/low_poly_f1_car.glb<>uid://bqf3pejr2hodv::::res://Scenes/camera_3d.gd<>uid://dab3u00i1ff86::::res://Scenes/area_3d.gd<>uid://mloxf4qganc5::::res://assets/Audio/audiomass-output.mp3
 uiN.gd::GDScript::4792291813606096740::1774632778::0::1::::<>CanvasLayer<><>0<>0<><>::
-uiN.tscn::PackedScene::1597785222585863590::1774632778::0::1::::<><><>0<>0<><>::uid://cajol08qjjv8w::::res://UI.gd<>uid://br3vnrm4cqyno::::res://assets/fonts/subatomic.tsoonami.ttf<>uid://dsdywjlmownkr::::res://assets/icons/lighting.png
+uiN.tscn::PackedScene::1597785222585863590::1774636690::0::1::::<><><>0<>0<><>::uid://cajol08qjjv8w::::res://UI.gd<>uid://br3vnrm4cqyno::::res://assets/fonts/subatomic.tsoonami.ttf<>uid://dsdywjlmownkr::::res://assets/icons/lighting.png<>uid://bnf74anbpbfyo::::res://assets/Audio/bipbip.mp3
 won.gd::GDScript::2980820149630243358::1774632778::0::1::::<>Control<><>0<>0<><>::
 Won.tscn::PackedScene::6039427599538273743::1774634298::0::1::::<><><>0<>0<><>::uid://dn66b0gcq723r::::res://assets/thumb-1920-371748.jpg<>uid://bip6w4iqnj6h3::::res://Scenes/won.gd<>uid://br3vnrm4cqyno::::res://assets/fonts/subatomic.tsoonami.ttf
