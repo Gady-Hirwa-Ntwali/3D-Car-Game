@@ -4,34 +4,36 @@
 [ext_resource type="PackedScene" uid="uid://bf0oxl5mnvw8o" path="res://assets/meshes/car/low_poly_f1_car.glb" id="2_cvnsp"]
 [ext_resource type="Script" uid="uid://dab3u00i1ff86" path="res://Scenes/area_3d.gd" id="4_vgqql"]
 [ext_resource type="AudioStream" uid="uid://mloxf4qganc5" path="res://assets/Audio/audiomass-output.mp3" id="5_fkybt"]
+[ext_resource type="AudioStream" uid="uid://2lo5xnfbg2mu" path="res://assets/freesound_community-car-idle-84718.mp3" id="5_x3wgy"]
+[ext_resource type="AudioStream" uid="uid://bufn3gmqrgbt6" path="res://assets/bump.wav" id="6_x3wgy"]
 
 [sub_resource type="GDScript" id="GDScript_vgqql"]
 script/source = "extends Camera3D
-#
-#@onready var car = get_parent()
-#
-#var default_position: Vector3
-#var default_rotation: Vector3
-#
-#@export var side_offset = 20.0
-#@export var side_speed = 4.0
-#
-#@export var speed_pullback = 2.0    
-#@export var speed_pull_speed = 3.0 
-#
-#@export var steer_lean = 3.0 
-#@export var lean_speed = 2.0
-#
-#func _ready():
-	#default_position = position
-	#default_rotation = rotation_degrees
-#
-#func _physics_process(delta):
-	#var steer = Input.get_axis(\"steer_right\", \"steer_left\")
-	#var speed = car.linear_velocity.length()
-#
-	#var target_x = default_position.x + (-steer * side_offset)
-	#position.x = lerp(position.x, target_x, delta * side_speed)
+
+@onready var car = get_parent()
+
+var default_position: Vector3
+var default_rotation: Vector3
+
+@export var side_offset = 20.0
+@export var side_speed = 4.0
+
+@export var speed_pullback = 2.0    
+@export var speed_pull_speed = 3.0 
+
+@export var steer_lean = 3.0 
+@export var lean_speed = 2.0
+
+func _ready():
+	default_position = position
+	default_rotation = rotation_degrees
+
+func _physics_process(delta):
+	var steer = Input.get_axis(\"steer_right\", \"steer_left\")
+	var speed = car.linear_velocity.length()
+
+	var target_x = default_position.x + (-steer * side_offset)
+	position.x = lerp(position.x, target_x, delta * side_speed)
 "
 
 [sub_resource type="AudioStreamMP3" id="AudioStreamMP3_cvnsp"]
@@ -64,7 +66,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.40844172, 9.409755, -5.513
 
 [node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="." unique_id=967081258]
 stream = SubResource("AudioStreamMP3_cvnsp")
-volume_db = 13.827
+volume_db = 24.861
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1015714982]
 transform = Transform3D(1, 0, -2.168119e-06, 0, 1, 0, 2.168119e-06, 0, 1, 0.965029, 6.684541, -1.1129218)
@@ -79,10 +81,19 @@ script = ExtResource("4_vgqql")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.2660797, 6.923697, -1.0918324)
 shape = SubResource("BoxShape3D_6t5aa")
 
-[node name="AudioStreamPlayer3D2" type="AudioStreamPlayer3D" parent="." unique_id=784253384]
+[node name="AccelSound" type="AudioStreamPlayer3D" parent="." unique_id=784253384]
 stream = ExtResource("5_fkybt")
-volume_db = -16.552
+volume_db = 54.91
 max_db = -6.31
+
+[node name="IdleSound" type="AudioStreamPlayer3D" parent="." unique_id=55052246]
+stream = ExtResource("5_x3wgy")
+volume_db = 42.759
+autoplay = true
+
+[node name="ColisionSound" type="AudioStreamPlayer3D" parent="." unique_id=1341606682]
+stream = ExtResource("6_x3wgy")
+volume_db = 13.793
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
 [connection signal="body_entered" from="Area3D" to="Area3D" method="_on_body_entered"]
