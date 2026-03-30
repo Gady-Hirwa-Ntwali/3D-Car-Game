@@ -83,7 +83,7 @@ func _physics_process(delta: float) -> void:
 	linear_velocity = global_transform.basis * local_vel
 	
 	var lateral_slip = local_vel.x / max(speed, 0.1)
-	var target_tilt  = lateral_slip * 15.0
+	var target_tilt  = lateral_slip * 30.0
 	car_mesh.rotation_degrees.z= lerp(car_mesh.rotation_degrees.z, target_tilt, delta * 5.0)
 	
 	if speed > 0.5:
